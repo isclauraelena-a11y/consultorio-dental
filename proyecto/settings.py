@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('generar_citas'),
+        'NAME': os.environ.get('consultorio-db'),
         'USER': os.environ.get('generar_citas_user'),
         'PASSWORD': os.environ.get('OsAOFzH9v5rbLZaMhrhHWNDtAj6BbBX2'),
         'HOST': os.environ.get('dpg-d87otu6k1jcs73bnvqh0-a'),
