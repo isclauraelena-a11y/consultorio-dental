@@ -76,12 +76,12 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 
 DATABASES = {
     'default': {
-         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('consultorio-db'),
-        'USER': os.environ.get('generar_citas_user'),
-        'PASSWORD': os.environ.get('OsAOFzH9v5rbLZaMhrhHWNDtAj6BbBX2'),
-        'HOST': os.environ.get('dpg-d87otu6k1jcs73bnvqh0-a'),
-        'PORT': os.environ.get('5432'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': os.environ.get('DB_NAME'),
+        'USER': os.environ.get('DB_USER'),
+        'PASSWORD': os.environ.get('DB_PASSWORD'),
+        'HOST': os.environ.get('DB_HOST'),
+        'PORT': os.environ.get('DB_PORT', '5432'),
     }
 }
 
